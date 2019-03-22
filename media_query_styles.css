@@ -40,7 +40,8 @@
 	}
 
 	.your-account-container > .tabs-content-container > .investments-tab > .cards > .card {
-		width: calc(100% - 30px);
+		width: 100%;
+		margin: 15px 0;
 	}
 }
 
