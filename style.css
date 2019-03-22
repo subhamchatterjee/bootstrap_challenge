@@ -131,6 +131,7 @@ body {
 }
 
 .your-account-container > .tabs-container > .tab {
+	width: 50%;
 	height: 42px;
 	flex-grow: 1;
 	margin: 0 1px;
