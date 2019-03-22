@@ -182,7 +182,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-image: url('http://www.tedmontgomery.com/tutorial/bckgrnds/bluefluf.jpg');
+	background-image: url('./images/card_image.jpg');
 }
 
 .your-account-container > .tabs-content-container > .investments-tab .card > .card-top-container > .title-container {
