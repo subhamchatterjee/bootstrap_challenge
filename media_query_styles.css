@@ -1,0 +1,68 @@
+@media (max-width: 480px) {
+	.your-account-header.row {
+		background-image: linear-gradient(to bottom, #20314d 0%, #102c60 30%);
+	}
+
+	.your-account-header .header-title-container {
+		text-align: center;
+	}
+
+	.your-account-header .header-content-container {
+		flex-direction: column;
+	}
+
+	.your-account-header .header-content-container > .summary-container {
+		flex-wrap: wrap;
+    justify-content: center;
+	}
+
+	.your-account-header .header-content-container > .summary-container > .summary {
+		width: 50%;
+		margin-bottom: 10px;
+	}
+
+	.your-account-header .header-content-container > .graph-container,
+	.your-account-header .header-content-container > .legend-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.your-account-header .header-content-container > .graph-container {
+		margin: 15px 0;
+	}
+
+	.your-account-header .header-notification-container {
+		padding: 10px 15px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 1000px) {
+	.your-account-header .header-title-container {
+		text-align: center;
+	}
+
+	.your-account-header.row {
+		background-image: linear-gradient(to bottom, #20314d 0%, #102c60 100px);
+	}
+
+	.your-account-header .header-content-container {
+		flex-wrap: wrap;
+		padding: 10px 20px;
+	}
+
+	.your-account-header .header-content-container > .graph-container,
+	.your-account-header .header-content-container > .legend-container {
+		width: 50%;
+		display: flex;
+		margin-top: 15px;
+		justify-content: center;
+	}
+
+	.your-account-container > .tabs-content-container > .investments-tab > .cards {
+		padding: 10px 0;
+	}
+
+	.your-account-container > .tabs-content-container > .investments-tab > .cards > .card {
+		width: calc(50% - 30px);
+	}
+}

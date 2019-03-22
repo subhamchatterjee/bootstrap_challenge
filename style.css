@@ -1,0 +1,289 @@
+body {
+	margin: 0;
+}
+
+* {
+	letter-spacing: 0.8px;
+}
+
+.your-account-header.row {
+	margin: 0;
+	color: #fff;
+	background-image: linear-gradient(to right, #20314d 10%, #102c60 65%);
+}
+
+.your-account-header .header-title-container {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 6%;
+}
+
+.your-account-header .header-title-container > i.fa {
+	margin-right: 5px;
+}
+
+.your-account-header .header-content-container {
+	display: flex;
+	padding: 10px 6%;
+  align-items: center;
+}
+
+.your-account-header .header-content-container > .summary-container {
+	display: flex;
+	padding: 15px;
+	align-items: center;
+	background-color: #122c51;
+}
+
+.your-account-header .header-content-container > .summary-container > .summary {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.your-account-header .header-content-container > .summary-container > .summary > .title {
+	color: #4b617c;
+	margin-bottom: 6px;
+	text-transform: uppercase;
+}
+
+.your-account-header .header-content-container > .summary-container > .summary > .value.positive {
+	color: #87ce5f;
+}
+
+.your-account-header .header-content-container > .summary-container > .summary > .value > i.fa {
+	color: #bd424f;
+	margin-left: 6px;
+}
+
+.your-account-header .header-content-container > .legend-container > .legends {
+	display: flex;
+	flex-direction: column;
+}
+
+.your-account-header .header-content-container > .legend-container > .legends > .legend {
+	display: flex;
+	margin: 8px 0;
+	align-items: center;
+}
+
+.your-account-header .header-content-container > .legend-container > .legends > .legend > .legend-color {
+	width: 6px;
+	height: 20px;
+	margin-right: 12px;
+}
+
+.your-account-header .header-content-container > .legend-container > .legends > .legend > .legend-title {
+	color: #c3c3c3;
+	min-width: 40px;
+	margin-right: 12px;
+}
+
+.your-account-header .header-notification-container {
+	display: flex;
+	padding: 10px 0;
+	align-items: center;
+	justify-content: center;
+	background-color: #102c5e;
+	box-shadow: 0 -1px 2px 0.5px #3b4d9f;
+}
+
+.your-account-header .header-notification-container > i.fa {
+	margin-right: 10px;
+}
+
+.your-account-header .header-notification-container > i.fa.new-notification {
+	position: relative;
+}
+
+.your-account-header .header-notification-container > i.fa.new-notification::after {
+	top: -4px;
+	width: 8px;
+	right: -1px;
+	height: 8px;
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	background-color: #bd424f;
+}
+
+.your-account-header .header-notification-container > .notification-message {
+	color: #eee;
+	margin-right: 15px;
+}
+
+.your-account-header .header-notification-container > button.btn.allocate-funds-btn {
+	border: 0;
+	color: #eee;
+	border-radius: 0;
+	background-color: #bd424f;
+}
+
+.your-account-container.row {
+	margin: 0;
+}
+
+.your-account-container > .tabs-container {
+	padding: 0;
+	display: flex;
+}
+
+.your-account-container > .tabs-container > .tab {
+	height: 42px;
+	flex-grow: 1;
+	margin: 0 1px;
+	color: #7a7a7a;
+	cursor: pointer;
+	padding: 10px 0;
+	text-align: center;
+	transition: all 0.4s ease;
+	border-bottom: 2px solid #999;
+}
+
+.your-account-container > .tabs-container > .tab:hover {
+	font-size: 15px;
+}
+
+.your-account-container > .tabs-container > .tab.active {
+	color: #111;
+	font-weight: 600;
+	border-bottom: 2px solid #3a83bb;
+}
+
+.your-account-container > .tabs-content-container > .tab-content {
+	display: none;
+	padding: 20px 15px;
+}
+
+.your-account-container > .tabs-content-container > .tab-content.active {
+	display: flex;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab > .cards {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 10%;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab > .cards > .card {
+	padding: 0;
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 1px 1px #aaa;
+	width: calc((100% / 3) - 30px);
+}
+
+.your-account-container > .tabs-content-container > .investments-tab > .cards > .card > .card-top-container {
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-image: url('http://www.tedmontgomery.com/tutorial/bckgrnds/bluefluf.jpg');
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .card-top-container > .title-container {
+	color: #fff;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .card-top-container > .investment-period-container {
+	color: #fff;
+	display: flex;
+	padding: 10px 15px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(30, 30, 30, 0.6);
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .card-top-container > .investment-period-container > .investment-period {
+	font-size: 12px;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .card-top-container > .investment-period-container > .investment-timeline {
+	width: 120px;
+	border-bottom: 1px solid #fff;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .card-top-container > .investment-period-container > .investment-timeline > .investment-steps-image {
+	height: 16px;
+	transform: translateX(-40%);
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .investment-details > .investment-detail-items > .investment-detail-item {
+	color: #666;
+	display: flex;
+	font-size: 13px;
+	padding: 8px 12px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 0.5px solid #eee;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .investment-details > .investment-detail-items > .investment-detail-item > .value {
+	color: #444;
+	font-weight: 600;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .investment-details > .investment-detail-items > .investment-detail-item > .value > i.fa {
+	color: #bd424f;
+	margin-left: 6px;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .investment-details > .investment-detail-items > .investment-detail-item > .value > .portfolio-health-image {
+	height: 18px;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab > .cards > .card > .investment-buttons {
+	display: flex;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .investment-buttons > button.btn {
+	border: 0;
+	margin: 0;
+	color: #fff;
+	flex-grow: 1;
+	border-radius: 0;
+	width: calc(100% / 3);
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .investment-buttons > button.btn.view-investment-btn {
+	background-color: #0e2866;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .investment-buttons > button.btn.investment-more-btn {
+	background-color: #4db324;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab .card > .investment-buttons > button.btn.withdraw-investment-btn {
+	background-color: #8a2130;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab > .cards > .card.add-new {
+	display: flex;
+	cursor: pointer;
+	min-height: 355px;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 1px 1px #3981ba;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab > .cards > .card.add-new > i.fa {
+	color: #3981ba;
+	font-size: 50px;
+	margin-bottom: 10px;
+	transition: all 0.4s ease;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab > .cards > .card.add-new > .add-new-investment-text {
+	color: #0e2866;
+	font-size: 18px;
+}
+
+.your-account-container > .tabs-content-container > .investments-tab > .cards > .card.add-new:hover > i.fa {
+	font-size: 56px;
+}

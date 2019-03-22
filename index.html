@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bootstrap Challenge</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media_query_styles.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="your-account-page">
+			<div class="your-account-header row">
+				<div class="header-title-container col-md-12">
+					<i class="fa fa-home"></i>
+					<span>Your Account Summary</span>
+				</div>
+				<div class="header-content-container col-md-12">
+					<div class="summary-container col-xs-12 col-md-8">
+						<div class="summary col-md-3">
+							<span class="title">Investment Value</span>
+							<span class="value">SGD 7,924</span>
+						</div>
+						<div class="summary col-md-3">
+							<span class="title">Current Value</span>
+							<span class="value positive">SGD 2,839</span>
+						</div>
+						<div class="summary col-md-3">
+							<span class="title">Annualised Returns</span>
+							<span class="value positive">-100.0%<i class="fa fa-arrow-down"></i></span>
+						</div>
+						<div class="summary col-md-3">
+							<span class="title">Cash Balance</span>
+							<span class="value positive">SGD 1,097</span>
+						</div>
+					</div>
+					<div class="graph-container col-xs-12 col-md-2">
+						<img class="graph-image" src="./images/graph.png" alt="Investment Portfolio Graph" title="Investment Portfolio Graph" />
+					</div>
+					<div class="legend-container col-xs-12 col-md-2">
+						<div class="legends">
+							<div class="legend">
+								<div class="legend-color" style="background-color: #3a83bb;"></div>
+								<div class="legend-title">Equity</div>
+								<div class="legend-value">2138.28%</div>
+							</div>
+							<div class="legend">
+								<div class="legend-color" style="background-color: #a1a8cc;"></div>
+								<div class="legend-title">Bond</div>
+								<div class="legend-value">843.87%</div>
+							</div>
+							<div class="legend">
+								<div class="legend-color" style="background-color: #e9eef9;"></div>
+								<div class="legend-title">Others</div>
+								<div class="legend-value">319.61%</div>
+							</div>
+							<div class="legend">
+								<div class="legend-color" style="background-color: #50b5cf;"></div>
+								<div class="legend-title">Cash</div>
+								<div class="legend-value">-3201.76%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-notification-container col-md-12">
+					<i class="fa fa-bell new-notification"></i>
+					<span class="notification-message">You have excess cash available for Investing</span>
+					<button class="btn btn-default allocate-funds-btn">Allocate Funds</button>
+				</div>
+			</div>
+			<div class="your-account-container row">
+				<div class="tabs-container col-md-12">
+					<div class="tab active col-md-6">1 Investments</div>
+					<div class="tab col-md-6">1 Goal(s) in planning</div>
+				</div>
+				<div class="tabs-content-container col-md-12">
+					<div class="tab-content investments-tab active">
+						<div class="cards col-md-12">
+							<div class="card col-sm-6 col-md-4">
+								<div class="card-top-container">
+									<div class="title-container">
+										Growth
+										<i class="fa fa-pencil"></i>
+									</div>
+									<div class="investment-period-container">
+										<span class="investment-period">10 years</span>
+										<div class="investment-timeline">
+											<img class="investment-steps-image" src="./images/investment_steps_image.png" />
+										</div>
+									</div>
+								</div>
+								<div class="investment-details">
+									<div class="investment-detail-items">
+										<div class="investment-detail-item">
+											<span class="title">Invested</span>
+											<span class="value">SGD 7,924</span>
+										</div>
+										<div class="investment-detail-item">
+											<span class="title">Withdrawn</span>
+											<span class="value">SGD 0</span>
+										</div>
+										<div class="investment-detail-item">
+											<span class="title">Current Value</span>
+											<span class="value">SGD 2,839</span>
+										</div>
+										<div class="investment-detail-item">
+											<span class="title">Returns</span>
+											<span class="value">-100.0%<i class="fa fa-arrow-down"></i></span>
+										</div>
+										<div class="investment-detail-item">
+											<span class="title">Portfolio Health</span>
+											<span class="value">
+												<img class="portfolio-health-image" src="./images/portfolio_health_image.png">
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="investment-buttons">
+									<button class="btn btn-default view-investment-btn">View</button>
+									<button class="btn btn-default investment-more-btn">Invest more</button>
+									<button class="btn btn-default withdraw-investment-btn">Withdraw</button>
+								</div>
+							</div>
+							<div class="card col-sm-6 col-md-4 add-new">
+								<i class="fa fa-plus"></i>
+								<span class="add-new-investment-text">Add New Investment</span>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content goals-tab"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
