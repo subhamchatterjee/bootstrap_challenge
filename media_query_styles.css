@@ -34,6 +34,14 @@
 	.your-account-header .header-notification-container {
 		padding: 10px 15px;
 	}
+
+	.your-account-container > .tabs-content-container > .investments-tab > .cards {
+		padding: 10px 0;
+	}
+
+	.your-account-container > .tabs-content-container > .investments-tab > .cards > .card {
+		width: calc(100% - 30px);
+	}
 }
 
 @media (min-width: 481px) and (max-width: 1000px) {
